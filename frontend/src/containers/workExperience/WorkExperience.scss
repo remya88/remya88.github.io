@@ -1,0 +1,43 @@
+.experience-wrapper {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.experience-carousel {
+  display: flex; /* Use flex to align items horizontally */
+}
+
+.experience-carousel .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Ensure that the cards stretch to equal height */
+}
+
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Make each card take up full height of its parent */
+}
+
+.experience-heading {
+  font-size: 56px;
+  font-weight: 400;
+}
+
+@media (max-width: 1380px) {
+  .experience-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+}
