@@ -40,4 +40,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Deploy to GitHub Pages
-        run: npm run deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Using GitHub's token for authentication
+        run: |
+          npx gh-pages -d build -b gh-pages -r https://github.com/${{ github.repository }}.git
