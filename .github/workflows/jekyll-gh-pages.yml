@@ -1,0 +1,46 @@
+name: Deploy React App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Update Browserslist DB
+        run: npx update-browserslist-db@latest
+
+      - name: Build React App
+        run: CI=false npm run build
+
+      - name: Set Git user name and email
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy to GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Using the PAT here
+        run: |
+          npx gh-pages -d build -b gh-pages -r https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
