@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18  # Adjust to match your local Node.js version
+          node-version: 18
           cache: npm
 
       - name: Install dependencies
@@ -32,7 +32,7 @@ jobs:
         run: npx update-browserslist-db@latest
 
       - name: Build React App
-        run: CI=false npm run build  # Disable treating warnings as errors in CI
+        run: CI=false npm run build
 
       - name: Set Git user name and email
         run: |
@@ -41,6 +41,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Using GitHub's token for authentication
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Using the PAT here
         run: |
-          npx gh-pages -d build -b gh-pages -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          npx gh-pages -d build -b gh-pages -r https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
