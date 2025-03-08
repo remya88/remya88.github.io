@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules"; // Ensure modules are imported
+import { Pagination, Autoplay } from "swiper/modules"; // Ensure modules are imported
 import "swiper/css"; // Core Swiper styles
 import "swiper/css/navigation"; // Navigation styles
 import "swiper/css/pagination"; // Pagination styles
