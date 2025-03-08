@@ -22,11 +22,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18  # Change this to match your local Node.js version
+          node-version: 18  # Adjust to match your local Node.js version
           cache: npm
-
-      - name: Clean npm cache
-        run: rm -rf node_modules package-lock.json && npm cache clean --force
 
       - name: Install dependencies
         run: npm install
@@ -35,7 +32,12 @@ jobs:
         run: npx update-browserslist-db@latest
 
       - name: Build React App
-        run: CI=false npm run build  # Prevent ESLint warnings from failing the build
+        run: CI=false npm run build  # Disable treating warnings as errors in CI
+
+      - name: Set Git user name and email
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
