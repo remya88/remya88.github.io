@@ -101,6 +101,7 @@
 }
 @media (max-width: 768px) {
   .button-greeting-div {
+    display: block;
     justify-content: space-around;
   }
   .greeting-text {

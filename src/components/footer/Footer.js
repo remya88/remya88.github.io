@@ -13,7 +13,7 @@ export default function Footer() {
           {emoji("")}
         </p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Copyright ©2025 Xyntho
+          Copyright ©2025
         </p>
       </div>
     </Fade>

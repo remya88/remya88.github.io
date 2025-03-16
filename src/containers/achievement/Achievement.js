@@ -57,7 +57,7 @@ export default function Achievement() {
                   slidesPerView: 2,
                   spaceBetween: 20,
                 },
-                480: {
+                0: {
                   slidesPerView: 1,
                   spaceBetween: 10,
                 },

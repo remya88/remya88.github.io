@@ -145,9 +145,9 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Amrita Viswa Vidyapeetham University",
+      schoolName: "Master of Computer Applications",
       logo: require("./assets/images/harvardLogo.jpeg"),
-      subHeader: "Master of Computer Applications",
+      subHeader: "Amrita Viswa Vidyapeetham University",
       duration: "Jul 2009 - May 2012",
       desc: "",
       descBullets: [
@@ -155,9 +155,9 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Kerala University",
+      schoolName: "Bachelor of Science in Computer Science",
       logo: require("./assets/images/stanfordLogo.jpeg"),
-      subHeader: "Bachelor of Science in Computer Science",
+      subHeader: "University of Kerala",
       duration: "Aug 2006 - May 2009",
       desc: "",
       descBullets: []
