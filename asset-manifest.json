@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.217dc49e.css",
-    "main.js": "/static/js/main.d9b22a8b.js",
+    "main.css": "/static/css/main.423f5ea5.css",
+    "main.js": "/static/js/main.ae0850a0.js",
     "static/css/64.369f62ac.chunk.css": "/static/css/64.369f62ac.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/static/js/64.56dc6704.chunk.js",
     "static/css/769.d739bdcd.chunk.css": "/static/css/769.d739bdcd.chunk.css",
@@ -20,15 +20,15 @@
     "index.html": "/index.html",
     "static/media/infy.avif": "/static/media/infy.749b3fa45ddbcd5824be.avif",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.217dc49e.css.map": "/static/css/main.217dc49e.css.map",
-    "main.d9b22a8b.js.map": "/static/js/main.d9b22a8b.js.map",
+    "main.423f5ea5.css.map": "/static/css/main.423f5ea5.css.map",
+    "main.ae0850a0.js.map": "/static/js/main.ae0850a0.js.map",
     "64.369f62ac.chunk.css.map": "/static/css/64.369f62ac.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/static/js/64.56dc6704.chunk.js.map",
     "769.d739bdcd.chunk.css.map": "/static/css/769.d739bdcd.chunk.css.map",
     "769.24c5fa61.chunk.js.map": "/static/js/769.24c5fa61.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.217dc49e.css",
-    "static/js/main.d9b22a8b.js"
+    "static/css/main.423f5ea5.css",
+    "static/js/main.ae0850a0.js"
   ]
 }
